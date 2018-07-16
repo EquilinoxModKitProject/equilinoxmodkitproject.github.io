@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: open-sans;
+	src: url('res/open-sans.ttf');
+}
+
+body {
+	margin: 0;
+	
+	background: url("res/background.png") no-repeat fixed center bottom;
+	background-size: cover;
+	
+	font-family: open-sans;
+	font-size: 15px;
+}
+
+h1 {
+	margin-bottom: -5px;
+	
+	font-size: 20px;
+}
+
+h2 {
+	margin-bottom: -5px;
+	
+	font-size: 17px;
+}
+
+h3 {
+	margin-bottom: -5px;
+	
+	font-size: 14px;
+}
+
+/* MEDIA ICONS */
+
+.media {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 5px 7px 5px 5px;
+	
+	background: rgba(64, 64, 64, 0.9);
+}
+
+.media .mediaicon {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+	
+	text-align: center;
+	background: rgba(127, 127, 127, 0.9);
+}
+
+.media .mediaicon:last-of-type {
+	margin-bottom: 0;
+}
+
+.media .mediaicon img {
+	padding-top: 4px;
+}
+
+.media #github:hover {
+	background: rgb(50, 49, 49);
+	transition: background 1s;
+}
+
+.media #discord:hover {
+	background: rgb(114, 137, 218);
+	transition: background 1s;
+}
+
+.media #patreon:hover {
+	background: rgb(249, 104, 84);
+	transition: background 1s;
+}
+
+.media #youtube:hover {
+	background: rgb(215, 37, 35);
+	transition: background 1s;
+}
+
+.media #twitter:hover {
+	background: rgb(29, 161, 242);
+	transition: background 1s;
+}
+
+.media #email:hover {
+	background: rgb(64, 64, 64);
+	transition: background 1s;
+}
+
+/* GRID */
+
+.grid {
+	display: grid;
+	grid-template-columns: 3fr 1.5fr;
+	grid-template-areas: 'header header' 'navigation navigation' 'content sidebar' 'footer footer';
+	
+	width: 1000px;
+	min-width: 359px; /* min width, the navigation bar items still are on one line */
+	margin: 0 auto 0 auto;
+}
+
+/* HEADER */
+
+.grid .header {
+	grid-area: header;
+	
+	padding: 30px;
+	
+	color: white;
+	background: rgba(64, 64, 64, 0.9);
+	
+	text-align: center;
+}
+
+.grid .header h1 {
+	font-size: 33px;
+}
+
+.grid .header p {
+	font-size: 16px;
+}
+
+/* NAVIGATION */
+
+.grid .navigation {
+	grid-area: navigation;
+	
+	margin: 0 auto 20px auto;
+}
+
+.grid .navigation a {
+	padding: 0 30px 5px 30px;
+	
+	color: black;
+	
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.grid .navigation a:hover, .grid .navigation .currentnavigation {
+	color: white;
+	background: rgba(64, 64, 64, 0.9);
+	transition: background 1s, color 1s;
+}
+
+/* CONTENT */
+
+.grid .content {
+	grid-area: content;
+}
+
+.grid .content section {
+	margin: 0 5px 5px 0;
+	padding: 0px 10px 0px 10px;
+	
+	background: rgba(230, 230, 230, 0.5);
+	border: 1px solid rgba(191, 191, 191, 0.5);
+	border-radius: 5px;
+}
+
+.grid .content section:last-of-type {
+	margin: 0 5px 15px 0;
+}
+
+/* SIDEBAR */
+
+.grid .sidebar {
+	grid-area: sidebar;
+	
+	margin: 0 0 15px 5px;
+	padding: 0 10px 0 10px;
+	
+	background: rgba(230, 230, 230, 0.5);
+	border: 1px solid rgba(191, 191, 191, 0.5);
+	border-radius: 5px;
+}
+
+.grid .sidebar article {
+	border-bottom: 2px dashed rgba(191, 191, 191, 0.5);
+}
+
+.grid .sidebar article:last-of-type {
+	border-width: 0;
+}
+
+.grid .sidebar article .articledate {
+	float: right;
+	
+	color: rgba(127, 127, 127, 0.9);
+	
+	font-size: 10px;
+}
+
+.grid .sidebar article p {
+	font-size: 14px;
+}
+
+/* FOOTER */
+
+.grid .footer {
+	grid-area: footer;
+	
+	padding: 10px;
+	
+	background: rgb(64, 64, 64);
+	
+	font-size: 12px;
+	text-align: center;
+}
+
+.grid .footer a {
+	color: rgba(127, 127, 127, 0.9);
+	
+	text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1150px) {
+	.media {
+		right: -60px;
+		
+		transition: right 1s;
+	}
+}
+
+@media only screen and (min-width: 1150px) {
+	.media {
+		right: 0;
+		
+		transition: right 1s;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.grid {
+		width: auto;
+	}
+	
+	.grid .navigation a {
+		padding: 0 20px 5px 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.grid {
+		grid-template-columns: 100%;
+		grid-template-areas: "header" "navigation" "content" "sidebar" "footer ";
+	}
+	
+	.grid .navigation a {
+		padding: 0 10px 5px 10px;
+	}
+	
+	.grid .navigation #nav_supporters {
+		display: none;
+	}
+	
+	.grid .content section {
+		margin: 0 0 5px 0;
+	}
+	
+	.grid .sidebar {
+		display: none;
+		
+		margin: 0 0 15px 0;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	.grid {
+		grid-template-columns: 3fr 1.5fr;
+		grid-template-areas: 'header header' 'navigation navigation' 'content sidebar' 'footer footer';
+	}
+}

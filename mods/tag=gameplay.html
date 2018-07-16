@@ -1,0 +1,196 @@
+<!DOCTYPE HTMl>
+
+<html lang="en">
+	
+	
+	<head>
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122281412-1 "></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'GA_TRACKING_ID');
+		</script>
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/res/apple-touch-icon.png">
+		<link rel="icon" sizes="32x32" href="/res/favicon-32x32.png">
+		<link rel="icon" sizes="16x16" href="/res/favicon-16x16.png">
+		<link rel="manifest" href="/res/site.webmanifest">
+		<link rel="mask-icon" href="/res/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/res/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffc40d">
+		<meta name="msapplication-config" content="/res/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+		<title>EMK | Mods: Gameplay</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		
+		<style>
+			.grid {
+				grid-template-columns: 3.5fr 1fr;
+			}
+			
+			.grid .content section {
+				display: inline-block;
+				float: left;
+				
+				width: calc(33% - 45px);
+				height: 280px;
+				padding: 0 20px 0 20px;
+				
+				text-align: center;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			
+			.grid .content section .modauthor {
+				margin: -15px 0 5px 0;
+			}
+			
+			.grid .content section .modauthor a {
+				color: rgba(127, 127, 127, 0.9);
+				
+				font-size: 12px;
+			}
+			
+			.grid .content section a {
+				color: black;
+				
+				text-decoration: none;
+			}
+			
+			.grid .content section img {
+				width: 100%;
+				margin-bottom: -5px;
+			}
+			
+			.grid .sidebar {
+				text-align: center;
+			}
+			
+			.grid .sidebar a {
+				color: black;
+			}
+			
+			@media only screen and (max-width: 790px) {
+				.grid .content section {
+					width: calc(50% - 47px);
+					height: auto;
+					max-height: 300px;
+				}
+			}
+			
+			@media only screen and (max-width: 600px) {
+				.grid {
+					grid-template-columns: 100%;
+					grid-template-areas: "header" "navigation" "sidebar" "content" "footer ";
+				}
+				
+				.grid .content section {
+					width: calc(50% - 45px);
+					margin: 0 5px 5px 0;
+				}
+				
+				.grid .content section:nth-of-type(even) {
+					margin-right: 0px;
+				}
+				
+				.grid .sidebar {
+					display: inline;
+					margin-left: 15%;
+					margin-right: 15%;
+				}
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+		
+		<!-- MEDIA ICONS -->
+		
+		<div class="media">
+			<div class="mediaicon" id="github">
+				<a target="_blank" rel="noopener" href="https://github.com/EquilinoxModKit/EMK"><img title="Equilinox Mod Kit on GitHub" src="/res/mediaicons/github.png"></a>
+			</div>
+			<div class="mediaicon" id="discord">
+				<a target="_blank" rel="noopener" href="https://discord.gg/fnkTBxy"><img title="Equilinox Mod Kit on Discord" src="/res/mediaicons/discord.png"></a>
+			</div>
+			<div class="mediaicon" id="patreon">
+				<a target="_blank" rel="noopener" href="https://patreon.com/equilinoxmodkit"><img title="Equilinox Mod Kit on Patreon" src="/res/mediaicons/patreon.png" href=""></a>
+			</div>
+			<div class="mediaicon" id="youtube">
+				<a target="_blank" rel="noopener" href="https://youtube.com/channel/UC8CEjPeMC6YjffzQv2q7dcA"><img title="DesertCookie on YouTube" src="/res/mediaicons/youtube.png" href=""></a>
+			</div>
+			<div class="mediaicon" id="twitter">
+				<a target="_blank" rel="noopener" href="https://twitter.com/DesertCookie_"><img title="DesertCookie on Twitter" src="/res/mediaicons/twitter.png" href=""></a>
+			</div>
+			<div class="mediaicon" id="email">
+				<a href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
+			</div>
+		</div>
+		
+		
+		<div class="grid">
+			
+			<!-- HEADER -->
+			
+			<div class="header">
+				<h1>Equilinox Mod Kit</h1>
+				<p>Inofficial modding API for Equilinox.</p>
+			</div>
+			
+			<!-- NAVIGATION -->
+			
+			<div class="navigation">
+				<a href="https://equilinoxmodkit.github.io">Home</a>
+				<a href="/mods">Mods</a>
+				<a href="/downloads">Downloads</a>
+				<a href="/news">News</a>
+				<a href="/wiki">Wiki</a>
+				<a id="nav_supporters" href="/supporters">Supporters</a>
+			</div>
+			
+			<!-- CONTENT -->
+			
+			<div class="content">
+				<p style="text-align: center; padding: 50px auto 50px auto">No mods available!</p>
+			</div>
+			
+			<!-- SIDEBAR -->
+			
+			<div class="sidebar">
+				<article>
+					<h1>Mods: Gameplay</h1>
+					<h2>Authors</h2>
+					<p>No authors available!</p>
+				</article>
+				<article>
+					<p><a href="/mods/submit">Submit a Mod</a><br>
+						<a href="mailto:eqilinoxmodkit@gmail.com">Submit a Tag</a></p>
+				</article>
+			</div>
+			
+			<!-- FOOTER -->
+			
+			<div class="footer">
+				<a target="_blank" rel="noopener" href="/legalandprivacy">Legal Notice & Privacy Policy</a>
+			</div>
+		
+		</div>
+	</body>
+
+
+</html>
