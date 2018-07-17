@@ -61,7 +61,7 @@ h3 {
 }
 
 .media .mediaicon img {
-	padding-top: 4px;
+	padding-top: 5px;
 }
 
 .media #github:hover {
@@ -247,6 +247,10 @@ h3 {
 	.grid .navigation a {
 		padding: 0 20px 5px 20px;
 	}
+    
+    .grid .content {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {

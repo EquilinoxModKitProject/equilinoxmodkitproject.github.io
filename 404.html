@@ -34,85 +34,23 @@
 		<meta name="msapplication-config" content="/res/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		
-		<title>EMK | Mods: Gameplay</title>
-		<meta name="description" content="Gameplay mods on the Equilinox Mod Kit website.">
+		<title>EMK | 404</title>
+		<meta name="description" content="Error 404 page on the Equilinox Mod Kit website.">
 		<meta name="keywords" content="Equilinox Mod Kit,Equilinox,Equilinox modding">
 		
 		<style>
 			.grid {
-				grid-template-columns: 3.5fr 1fr;
+				grid-template-columns: 100%;
+				grid-template-areas: 'header' 'navigation' 'content' 'footer';
 			}
-			
-			.grid .content section {
-				display: inline-block;
-				float: left;
-				
-				width: calc(33% - 45px);
-				height: 280px;
-				padding: 0 20px 0 20px;
-				
-				text-align: center;
-				text-overflow: ellipsis;
-				overflow: hidden;
-			}
-			
-			.grid .content section .modauthor {
-				margin: -15px 0 5px 0;
-			}
-			
-			.grid .content section .modauthor a {
-				color: rgba(127, 127, 127, 0.9);
-				
-				font-size: 12px;
-			}
-			
-			.grid .content section a {
-				color: black;
-				
-				text-decoration: none;
-			}
-			
-			.grid .content section img {
-				width: 100%;
-				margin-bottom: -5px;
-			}
+            
+            .grid .content section img {
+                width: 30%
+                margin: 10px auto 10px auto;
+            }
 			
 			.grid .sidebar {
-				text-align: center;
-			}
-			
-			.grid .sidebar a {
-				color: black;
-			}
-			
-			@media only screen and (max-width: 790px) {
-				.grid .content section {
-					width: calc(50% - 47px);
-					height: auto;
-					max-height: 300px;
-				}
-			}
-			
-			@media only screen and (max-width: 600px) {
-				.grid {
-					grid-template-columns: 100%;
-					grid-template-areas: "header" "navigation" "sidebar" "content" "footer ";
-				}
-				
-				.grid .content section {
-					width: calc(50% - 45px);
-					margin: 0 5px 5px 0;
-				}
-				
-				.grid .content section:nth-of-type(even) {
-					margin-right: 0px;
-				}
-				
-				.grid .sidebar {
-					display: inline;
-					margin-left: 15%;
-					margin-right: 15%;
-				}
+				display: none;
 			}
 		</style>
 	</head>
@@ -142,8 +80,8 @@
 				<a href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
 			</div>
 		</div>
-		
-		
+        
+        
 		<div class="grid">
 			
 			<!-- HEADER -->
@@ -167,21 +105,9 @@
 			<!-- CONTENT -->
 			
 			<div class="content">
-				<p style="text-align: center; padding: 50px auto 50px auto">No mods available!</p>
-			</div>
-			
-			<!-- SIDEBAR -->
-			
-			<div class="sidebar">
-				<article>
-					<h1>Mods: Gameplay</h1>
-					<h2>Authors</h2>
-					<p>No authors available!</p>
-				</article>
-				<article>
-					<p><a href="/mods/submit">Submit a Mod</a><br>
-						<a href="mailto:eqilinoxmodkit@gmail.com">Submit a Tag</a></p>
-				</article>
+				<section>
+					<img src="/res/lost.png">
+				</section>
 			</div>
 			
 			<!-- FOOTER -->
