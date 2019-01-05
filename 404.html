@@ -20,6 +20,7 @@
 		</script>
 		
 		<meta charset="UTF-8">
+        <meta name="robots" content="noindex">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/style.css">
@@ -44,9 +45,20 @@
 				grid-template-areas: 'header' 'navigation' 'content' 'footer';
 			}
             
+            .grid .content section {
+                text-align: center;
+            }
+            
             .grid .content section img {
-                width: 30%
-                margin: 10px auto 10px auto;
+                width: 50%;
+                min-width: 250px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .grid .content section ul {
+                display: table;
+                margin: 0 auto;
             }
 			
 			.grid .sidebar {
@@ -66,6 +78,9 @@
 			</div>
 			<div class="mediaicon" id="discord">
 				<a target="_blank" rel="noopener" href="https://discord.gg/fnkTBxy"><img title="Equilinox Mod Kit on Discord" src="/res/mediaicons/discord.png"></a>
+			</div>
+            <div class="mediaicon" id="steam">
+				<a target="_blank" rel="noopener" href="https://steamcommunity.com/groups/equilinoxmodding"><img title="Equilinox Modding Community on Steam" src="/res/mediaicons/steam.png"></a>
 			</div>
 			<div class="mediaicon" id="patreon">
 				<a target="_blank" rel="noopener" href="https://patreon.com/equilinoxmodkit"><img title="Equilinox Mod Kit on Patreon" src="/res/mediaicons/patreon.png" href=""></a>
@@ -88,7 +103,7 @@
 			
 			<div class="header">
 				<h1>Equilinox Mod Kit</h1>
-				<p>Inofficial modding API for Equilinox.</p>
+				<p>Unofficial modding API for Equilinox.</p>
 			</div>
 			
 			<!-- NAVIGATION -->
@@ -106,6 +121,14 @@
 			
 			<div class="content">
 				<section>
+                    <h1>Are you lost?</h1>
+                    <p>It seems like this page doesn't exist.</p>
+                    <ul>
+                        <li>Check for spelling mistakes in the URL</li>
+                    </ul>
+                    <ul>
+                        <li>Report a broken link: <a href="mailto:equilinoxmodkit@gmail.com">equilinoxmodkit@gmail.com</a></li>
+                    </ul>
 					<img src="/res/lost.png">
 				</section>
 			</div>

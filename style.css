@@ -74,6 +74,11 @@ h3 {
 	transition: background 1s;
 }
 
+.media #steam:hover {
+	background: rgb(23, 26, 35);
+	transition: background 1s;
+}
+
 .media #patreon:hover {
 	background: rgb(249, 104, 84);
 	transition: background 1s;
