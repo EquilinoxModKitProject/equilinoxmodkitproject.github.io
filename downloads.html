@@ -46,15 +46,11 @@
 				display: inline-block;
 				float: left;
 				
-				width: calc(50% - 47px);
+				width: calc(100% - 47px);
 				padding: 0 20px 0 20px;
 				
 				text-overflow: ellipsis;
 				overflow: hidden;
-			}
-			
-			.grid .content section article {
-				border-bottom: 2px dashed rgba(191, 191, 191, 0.5);
 			}
 			
 			.grid .condent section article:last-of-type {
@@ -73,6 +69,9 @@
 			}
 			
 			.grid .sidebar {
+                height: auto%;
+                max-height: 500px;
+                
 				text-align: center;
 			}
 			
@@ -158,24 +157,98 @@
 			
 			<div class="content">
 				<section>
-					<article>
-						<p class="date">16.07.2018</p>
-						<h2 id="emk_x.x.x">Equilinox Mod Kit x.x.x</h2>
-						<p>Version x.x.x of the Equilinox Mod Kit brings new functions like:</p>
+					<article class="download">
+						<p class="date">04.01.2019</p>
+						<h2 id="emk_0.4.2">Equilinox Mod Kit v0.4.2</h2>
+                        <p><i>This is a snapshot release!</i></p>
 						<ul>
-							<li>Something</li>
-							<li>Something</li>
-							<li>Dark Side</li>
+                            <li>new launch arguments <i>-EmlCfgDir="..."</i> and <i>-EmlModsDir="..."</i> (see <a href="https://github.com/EquilinoxModKit/Equilinox-Mod-Loader/wiki/Launch-Arguments">GitHub Wiki</a>)</li>
+							<li>launch argument <i>-EquilinoxDebug</i> shortened to <i>-EqDebug</i></li>
+							<li>added menu that shows loaded mods</li>
+                            <li><b>BREAKING</b>: methods <i>preInit</i> and <i>init</i> now have parameters</li>
 						</ul>
-						<p><a href="">Download</a></p>
+						<p><a href="dl/emk/Equilinox%20Mod%20Kit%200.4.2.zip">Download</a></p>
 					</article>
 				</section>
 				<section>
-					<article>
-						<p class="date">16.07.2018</p>
-						<h2 id="eme_x.x.x">Equilinox Mod Enabler x.x.x</h2>
-						<p>Mod Enabler for the <a style="color: black" href="#emk_x.x.x">Equilinox Mod Kit version x.x.x</a>.</p>
-						<p><a href="">Download</a></p>
+					<article class="download">
+						<p class="date">18.12.2018</p>
+						<h2 id="emk_0.4.1">Equilinox Mod Kit v0.4.1</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<ul>
+                            <li>EmkMouse and EmkKeyboard not considered experimental anymore (moved to package <i>input</i>)</li>
+							<li>hid Equilinox debug output (use <i>-EquilinoxDebug</i> to show)</li>
+							<li>fixed emk.log location to always be in Equilinox installation directory</li>
+                            <li><i>init</i> method is now functional</li>
+                            <li><b>BREAKING</b>: added new parameter <i>thumbnail</i> to ModInfo annotation (see javadoc)</li>
+						</ul>
+						<p><a href="dl/emk/Equilinox%20Mod%20Kit%200.4.1.zip">Download</a></p>
+					</article>
+				</section>
+				<section>
+					<article class="download">
+						<p class="date">17.12.2018</p>
+						<h2 id="emk_0.4.0">Equilinox Mod Kit v0.4.0</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<ul>
+                            <li>improved log and extended log output</li>
+							<li>added missing javadoc to <i>LoggerUtil</i>, <i>EmkMouse</i> and <i>EmkKeyboard</i></li>
+							<li><i>EmkKeyboard</i> and <i>EmkMouse</i> should be working</li>
+                            <li>new launch argument <i>-EquilinoxDebug</i> to show hidden Equilinox log</li>
+                            <li>internal re-write of the launcher</li>
+						</ul>
+						<p><a href="dl/emk/Equilinox%20Mod%20Kit%200.4.0.zip">Download</a></p>
+					</article>
+				</section>
+				<section>
+					<article class="download">
+						<p class="date">16.12.2018</p>
+						<h2 id="emk_0.3.4">Equilinox Mod Kit v0.3.4</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<ul>
+							<li>mod loader finds Equilinox executable in most standard directories</li>
+							<li>problem finding natives on Linux resolved</li>
+						</ul>
+						<p><a href="dl/emk/Equilinox%20Mod%20Kit%200.3.4.zip">Download</a></p>
+					</article>
+				</section>
+                
+                <section></section>
+                
+				<section>
+					<article class="download">
+						<p class="date">04.01.2019</p>
+						<h2 id="eml_0.4.2">Equilinox Mod Loader v0.4.2</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<p>Equilinox Mod Loader for the <a style="color: black" href="#emk_0.4.2">Equilinox Mod Kit version 0.4.2</a>.</p>
+						<p><a href="dl/eml/equilinox-mod-loader-0.4.2.jar">Download</a></p>
+					</article>
+				</section>
+				<section>
+					<article class="download">
+						<p class="date">18.12.2018</p>
+						<h2 id="eml_0.4.1">Equilinox Mod Loader v0.4.1</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<p>Equilinox Mod Loader for the <a style="color: black" href="#emk_0.4.1">Equilinox Mod Kit version 0.4.1</a>.</p>
+						<p><a href="dl/eml/equilinox-mod-loader-0.4.1.jar">Download</a></p>
+					</article>
+				</section>
+				<section>
+					<article class="download">
+						<p class="date">17.12.2018</p>
+						<h2 id="eml_0.4.0">Equilinox Mod Loader v0.4.0</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<p>Equilinox Mod Loader for the <a style="color: black" href="#emk_0.4.0">Equilinox Mod Kit version 0.4.0</a>.</p>
+						<p><a href="dl/eml/equilinox-mod-loader-0.4.0.jar">Download</a></p>
+					</article>
+				</section>
+				<section>
+					<article class="download">
+						<p class="date">16.12.2018</p>
+						<h2 id="eml_0.3.4">Equilinox Mod Loader v0.3.4</h2>
+                        <p><i>This is a snapshot release!</i></p>
+						<p>Equilinox Mod Loader for the <a style="color: black" href="#emk_0.3.4">Equilinox Mod Kit version 0.3.4</a>.</p>
+						<p><a href="dl/eml/equilinox-mod-loader-0.3.4.jar">Download</a></p>
 					</article>
 				</section>
 			</div>
@@ -185,11 +258,17 @@
 			<div class="sidebar">
 				<article>
 					<h2>Equilinox Mod Kit</h2>
-					<p><a href="#emk_x.x.x">x.x.x</a></p>
+					<p><a href="#emk_0.3.4">0.3.4</a></p>
+					<p><a href="#emk_0.4.0">0.4.0</a></p>
+					<p><a href="#emk_0.4.1">0.4.1</a></p>
+					<p><a href="#emk_0.4.2">0.4.2</a></p>
 				</article>
 				<article>
-					<h2>Equilinox Mod Enabler</h2>
-					<p><a href="#eme_x.x.x">x.x.x</a></p>
+					<h2>Equilinox Mod Loader</h2>
+					<p><a href="#eml_0.3.4">0.3.4</a></p>
+					<p><a href="#eml_0.4.0">0.4.0</a></p>
+					<p><a href="#eml_0.4.1">0.4.1</a></p>
+					<p><a href="#eml_0.4.2">0.4.2</a></p>
 				</article>
 			</div>
 			
